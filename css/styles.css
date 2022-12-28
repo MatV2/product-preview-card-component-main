@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+:root{
+    /* Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --dark-cyan-hover: hsl(158, 91%, 14%);
+    --cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+div.card{
+    display: flex;
+    height: 450px;
+    width: 600px;
+}
+
+div.product-img{
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 300px;
+    border-radius: 5px 0 0 5px;
+}
+
+div.product-infos{
+    background-color: var(--white);
+    height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+}
+
+
+div.header-product-infos{
+    color: var(--dark-grayish-blue);
+    margin: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+div.title-product-infos{
+    margin: 0 30px;
+    font-family: 'Fraunces', serif;
+}
+
+div.product-infos-text{
+    margin: 0 30px;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+
+div.product-infos-text p {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+div.price-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+div.price-infos-1{
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+}
+
+div.price-infos-2{
+    text-decoration:line-through;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    margin: 0 30px 0 0;
+
+}
+
+div.add-cart{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+button.btn-product{
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px 90px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+button.btn-product:hover{
+    background-color: var(--dark-cyan-hover);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    body{
+        display: flex;
+    }
+
+    div.card{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 350px;
+    }
+
+    div.product-img{
+        background-image: url(/images/image-product-mobile.jpg);
+        height:250px;
+        width: 350px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    div.product-infos{
+        background-color: var(--white);
+        height: 450px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0 0 5px 5px;
+    }
+}
