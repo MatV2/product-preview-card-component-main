@@ -7,6 +7,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Screenshot](#screenshot)
 - [Built with](#built-with)
 - [Author](#author)
+- [Links](#links)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -32,4 +33,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Frontend Mentor - [@MatV2](https://www.frontendmentor.io/profile/MatV2)
 - Twitter - [@LUB_dev](https://www.twitter.com/lub_dev)
+
+## Links
+
+- Codepen.io - [@MatV2](https://codepen.io/MatV2/pen/yLqOJmV)
 
